@@ -1,0 +1,67 @@
+Each user have UID (user identifier), for simple users takes from pool: 500...1000 (basically).
+UID 0 – root users (administrator).
+UID logged in system logs, for determination which user is did what.
+
+
+Ctrl+Alt+F1
+Ctrl+Alt+…         Text interface, 1..6 virtual consoles minimum, can configure greater.
+Ctrl+Alt+F6
+
+//ttyN N FN  number of virtual console, getty utility convert terminal (black screen) to usefull terminal
+
+Ctrl+Alt+F8     Graphics interface
+
+Ctrl+Alt+F7
+Ctrl+Alt+F8         Graaphics consoles
+Ctrl+Alt+F9
+
+Ctrl+Alt+F12 ?  Console that show all logs of system?
+
+passwd – change password utilite
+
+autologin – autologin utilite, all users will be logged how one user, recommended only, when host work without internet connection and all fuiles and folders must have public access 
+
+who       //all users logged
+whoami //output user login
+who am i //output user login
+who -m //output user login
+last    //all users, including logged off in last time
+
+logout   //logout from consoles
+
+Ctrl+D   //equivalent to logout, that talks to bash, that in input stream is nothing will be prompted
+
+
+man [object]  //manual of all, structured like pages manual
+info [object]  //hypertext-based manual, but for not all Linux objects, is wrote info
+
+whatis [object]   //searching in NAME columns in manuals [object]
+apropos [object] //searching everywhere in manuals [object]
+
+whatis intro // manuals sections (basically 9).
+
+[object]  - command, system calls e.t.c.
+
+echo Hello, world!      //output in console text Hello, world!
+echo “Hello, world! “  //output in console text Hello, world!
+date     //date
+cal      //calendar
+
+
+//repeat all, that input in console
+cat
+Any test
+Any test    
+Ctrl+D
+
+keys
+who -m      //one letter key
+who --me   //multi letter key
+who –help
+
+-o //often output to standard output
+
+type  [command]  //type of command
+type  - a [command]  //type of command in all variants
+type -t [command]  //type type of command
+Ctrl+C  //equivalent, bat say to bash cancel activity of bash
