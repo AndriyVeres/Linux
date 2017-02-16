@@ -65,3 +65,14 @@ type  [command]  //type of command
 type  - a [command]  //type of command in all variants
 type -t [command]  //type type of command
 Ctrl+C  //equivalent, bat say to bash cancel activity of bash
+
+ls -i   //show index deskriptor
+
+HARDLINK
+
+ln file file-hardlink
+
+SYMBOLIC LINK
+
+ln -s file file-symlink
+realpath file-symlink      //real path of file-symlink
