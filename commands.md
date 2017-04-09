@@ -266,3 +266,121 @@ _searching in NAME columns in manuals [object]_
 
 ### /dev/null   
 >*file-gap, you can move all streams to this file, data wrom which you don`t need, data will be deleted*
+
+### bind -l
+>*list of all bash functions of readline library, readline  conigurational file inputrc, that*
+>*file consist of the next commands: "manage keyboyard sequence": function*
+
+### bind -p
+>*list of all sequences, that linked to readline functions*
+
+### tput
+>*utilite that works with TERM variable, and terminfo database can manage keyboyard sequence for all*
+>*terminfo*
+
+
+## CAPABILITIES OF TERMINAL AND CONTROL CHARACTERS
+
+### ^W
+>*Delete word*
+
+### ^U
+>*Delete string*
+
+### ^R
+>*Search in history of entered commands, need to type search key after ^R*
+>*The next suitable variant of command, according to search key can show also by using ^R*
+>*history of entered command stored in .bash_history file*
+
+### stty -a
+>*Change and print terminal line settings*
+
+### ^S
+>*Stop showing info on terminal*
+
+### ^Q
+>*Continue showing info on terminal*
+
+### ^V
+>*Don`t use the next control character as control character*
+
+### ^J
+>*Symbol of ending a string equivalent to enter*
+
+### ^J stty sane ^J
+>*Help reset terminal to some default values*
+
+### reset
+>*Reset terminal according to system configuration, that stored in /etc/inittab*
+
+### ^P
+>*Go to previous entered command, equivalent to key up arrow*
+
+### ^N
+>*Go to next entered command, equivalent to key down arrow*
+
+
+## ALIASES
+
+### alias
+>*show already defined aliases for user*
+
+### unalias shortkey
+>*remove shortkey from aliases*
+
+ 
+
+## WORKING WITH CATALOGUES
+ 
+
+### pushd [catalogue]
+
+>*push into stack new catalogue*
+
+### pupd [catalogue]
+>*remove from stack last added new catalogue, adn go to this catalogue*
+
+### dirs
+>*show catalogues stack*
+
+### type tab on keyboyard
+>*Completion*
+
+### basename [catalogue]
+>*show in terminal catalogue name*
+
+### ^G
+>*beeper*
+
+## TEMPLATES
+
+>**
+
+### Variables
+>*A=dit*
+>*B=dash*
+>*C="$A $B*
+>*will be output ditdash*
+
+
+## ENVIRONMENT VARIABLES
+
+
+### PATH
+
+>*Variable, that stored path, of folders, where located executable files - utilities, or programs,
+that can launch only by writing their name on terminal, like a utilite.
+This catalogues separated by : symbols, so you can stored more than one catalogues path in this variable.
+If input command - not oen terminal command, and is not presented by path to the executable file,
+like when we launch by typing a path to a file, shell will be search executable file in catalogues, which path are stored in a PATH variable*
+
+### PS1
+>*Use as welcome termincal welcome responce, when terminal waiting a command*
+>*\u - user; \h = host name; \t - time; \w - work directory and anothers...*
+
+### ?
+>*Use for returning an exit status.*
+>*You can show the prorgam returning status by using echo $?*
+
+### test
+>*check file types and compare values*

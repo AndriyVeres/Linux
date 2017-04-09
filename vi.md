@@ -85,3 +85,46 @@
 
 ### /{key_word}
 >*searching in a text elements by  ccording to key_word, you can navigate by using * - next, # - previous* 
+
+### x
+>*delete current symbol*
+
+### dd
+>*delete whole string*
+
+### :center
+>*move current string to center, you can also move whole text (see regular expressions)*
+
+### :left
+>*move current string to left border, you can also move whole text (see regular expressions)*
+
+### :right
+>*move current string to right border, you can also move whole text (see regular expressions)*
+
+### u
+>*undo*
+
+### )
+>*cluster identifyer, it means, that you can apply command till end the sentence (dot or empty string), 
+you can combine cluster command with another commands, for example: d), c) e.t.c.*
+
+### cw
+>*change word*
+
+### p
+>*paste deleted cluster by using d, c, x, usefull for mooving text parts*
+
+### :{begin line number},{end line number}command
+>*execute command without substitution the coursor in a need position in text*
+
+### .
+>* identifyer of current string*
+
+
+## VIM
+
+### ^p
+>*search previous similar word, see (:help ins-completion)*
+
+### ^n
+>*search next similar word, see (:help ins-completion)*
