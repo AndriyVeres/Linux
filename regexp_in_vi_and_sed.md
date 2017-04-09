@@ -5,5 +5,7 @@
 
 #### {range}
 >*% - whole file*
+
 >*. - current line*
+
 >*$ - last line in the file*
