@@ -22,10 +22,10 @@
 ### ESC
 >*command mode, in some cases need type ESC 2 times*
 
-### :set wrap*
+### :set wrap
 >*long strings transfer mode ON*
 
-### :set mowrap
+### :set nowrap
 >*long strings transfer mode OFF*
 
 ### :w
