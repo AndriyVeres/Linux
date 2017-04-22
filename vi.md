@@ -111,8 +111,11 @@ you can combine cluster command with another commands, for example: d), c) e.t.c
 ### cw
 >*change word*
 
+### y
+>*yank (copy) command*
+
 ### p
->*paste deleted cluster by using d, c, x, usefull for mooving text parts*
+>*paste deleted cluster by using d, c, x,or copied (yank command) usefull for mooving text parts*
 
 ### :{begin line number},{end line number}command
 >*execute command without substitution the coursor in a need position in text*
@@ -128,3 +131,17 @@ you can combine cluster command with another commands, for example: d), c) e.t.c
 
 ### ^n
 >*search next similar word, see (:help ins-completion)*
+
+## SETTING AND CONFIGURATIONAL FILES
+
+### :set {option}
+>*change option in a command line mode*
+
+### .exrc
+>*Vi config*
+
+### .vimrc
+>*VIM config*
+
+### :options
+>*see settings, ONLY FOR VIM*
