@@ -144,6 +144,9 @@ _searching in NAME columns in manuals [object]_
 ### ps -h 
 >*show process list hierarhically*
 
+### ps -ef
+>*
+
 
 
 	cat > [filename]   
@@ -368,3 +371,35 @@ _searching in NAME columns in manuals [object]_
 
 ### test
 >*check file types and compare values*
+
+## SYSTEM BOOTLOADING  
+
+### dmesg
+>*kernel launching log*
+
+### GRUB
+
+> Grand Unified Bootloader, have:
+
+* Boot sector on disk with map of placement.
+
+* Stage 1.5 - special intermediate bootloader (drivers of one special filesystem).
+
+* Second bootloader.
+
+### /boot/grub/
+>*GRUB catalogue
+
+### /etc/default/grub
+>*grub configurational file*
+
+## KERNEL
+
+### lsmod
+>*list of loaded kernel modules*
+
+### insmod
+>*load kernel module in to kernel*
+
+###rmmod
+>*unload kernel module from kernel*
