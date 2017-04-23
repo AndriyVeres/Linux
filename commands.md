@@ -379,7 +379,7 @@ _searching in NAME columns in manuals [object]_
 
 ### GRUB
 
-> Grand Unified Bootloader, have:
+Grand Unified Bootloader, have:
 
 * Boot sector on disk with map of placement.
 
@@ -401,5 +401,5 @@ _searching in NAME columns in manuals [object]_
 ### insmod
 >*load kernel module in to kernel*
 
-###rmmod
+### rmmod
 >*unload kernel module from kernel*
