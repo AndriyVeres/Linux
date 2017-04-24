@@ -372,12 +372,7 @@ _searching in NAME columns in manuals [object]_
 ### test
 >*check file types and compare values*
 
-## SYSTEM BOOTLOADING  
-
-### dmesg
->*kernel launching log*
-
-### GRUB
+## GRUB
 
 Grand Unified Bootloader, have:
 
@@ -395,6 +390,11 @@ Grand Unified Bootloader, have:
 
 ## KERNEL
 
+Kernel and start virtual disk archived by using gzip utilite, kernel can own unpack
+
+### dmesg
+>*kernel launching log*
+
 ### lsmod
 >*list of loaded kernel modules*
 
@@ -403,3 +403,15 @@ Grand Unified Bootloader, have:
 
 ### rmmod
 >*unload kernel module from kernel*
+
+### mkinitrd
+>*assembly start virtual disk*
+
+### /boot
+>*catalogue, that have all need images, kernel also, for boot*
+
+### init
+>*father of all processes (excluding kernel processes), by default located in **/sbin/init** *
+>*/etc/init/ folder have configurational skripts, what do, when init lauch*
+
+
