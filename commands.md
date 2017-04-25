@@ -420,7 +420,7 @@ Kernel and start virtual disk archived by using gzip utilite, kernel can own unp
 
 ## START SKRIPTS
 
->in older Linux version organization of launching start scenario was in a dedicated file, but this solution was not so good, in case of logic of launching (you need for example launch one deamon after another), also, when user install new module he need every time add start skripts of module to file, so it was not usable, in help, developers of Linux brings **.d-scheme,** it means, that in catalogue **/etc/ with new [module],** with configuration file **/etc/[module].conf** will be added new catalogue **/etc/[module].d**, for providing boot order, for skripts, inside rc.d catalogue, files inside named with using two digits, and order will provide by numbers of this digits (from lower to higher), also this files - symlink to skripts (that actually launch modules), that stored in **/etc/init.d/** catalogue
+>in older Linux version organization of launching start scenario was in a dedicated file, but this solution was not so good, in case of logic of launching (you need for example launch one deamon after another), also, when user install new module he need every time add start skripts of module to file, so it was not usable, in help, developers of Linux brings **.d-scheme,** it means, that in catalogue **/etc/ with new [module],** with configuration file **/etc/[module].conf** will be added new catalogue **/etc/[module].d**, for providing boot order, for skripts, inside rc.d catalogue, files inside named with using two digits, and order will provide by numbers of this digits (from lower to higher), also this files - symlink to skripts (that actually launch modules), that stored in **/etc/init.d/** catalogue. K-letter in beggining means kill process, S - start, when you change runlevels, for example from wih networking to without networking, network processes will be ended, and after ending will be started another, specific to next run level modules, if not need to change status of module, when You change run levels, skript willn`t execute.
 
 ### /etc/rc.d/init.d
 >*folder with start skripts*
@@ -474,7 +474,6 @@ In Linux present several types of run levels (depends on distributive):
 >*current run level, locate in __/sbin/runlevel__ *
 >*default runlevel presents in __/etc/inittab file__
 
->*In Ubuntu presents systemd manager, thats why in Ubuntu miss inittab* 
+>*In Ubuntu presents systemd manager, thats why in Ubuntu miss inittab, where You can change default run level, for Ubuntu need to use __update-rc.d__ utilite or __sysv-rc-conf__   or __rcconf__* 
 
 
-## START SKRIPTS.INITTAB
