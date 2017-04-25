@@ -170,6 +170,9 @@ _searching in NAME columns in manuals [object]_
 ### bg         
 >*move last stopped process to background*
 
+### /var/run
+>*file, where located PIDs of processes*
+
 
 ## SIGNALS
 
@@ -412,6 +415,66 @@ Kernel and start virtual disk archived by using gzip utilite, kernel can own unp
 
 ### init
 >*father of all processes (excluding kernel processes), by default located in **/sbin/init** *
->*/etc/init/ folder have configurational skripts, what do, when init lauch*
+>*/etc/init/ folder have configurational skripts, what do, when init lauch (in ubuntu miss inittab)*
 
 
+## START SKRIPTS
+
+>in older Linux version organization of launching start scenario was in a dedicated file, but this solution was not so good, in case of logic of launching (you need for example launch one deamon after another), also, when user install new module he need every time add start skripts of module to file, so it was not usable, in help, developers of Linux brings **.d-scheme,** it means, that in catalogue **/etc/ with new [module],** with configuration file **/etc/[module].conf** will be added new catalogue **/etc/[module].d**, for providing boot order, for skripts, inside rc.d catalogue, files inside named with using two digits, and order will provide by numbers of this digits (from lower to higher), also this files - symlink to skripts (that actually launch modules), that stored in **/etc/init.d/** catalogue
+
+### /etc/rc.d/init.d
+>*folder with start skripts*
+### or
+### etc/init.d
+>*for compatibility with UNIX in some distributives*
+
+### [skript] start
+>*launch skript*
+
+### [skript] stop
+>*stop skript*
+
+>*[scenario] full path to skript in /etc/rc.d/*
+
+### service [module] start
+>*launch kernel module (the same like in previous case) by utilite service*
+
+### service [module] stop
+>*stop kernel module (the same like in previous case) by utilite service*
+
+## START SKRIPTS.RUN LEVELS
+
+Run level - type of launching the system, profile of system launch
+In Linux present several types of run levels (depends on distributive):
+
+* Level 0: System stop.
+
+* Level 1: Mono-user mode, one terminal, without deamons.
+
+* level 2: Multi-user mode, without networking.
+
+* Level 3: Multi-user mode, with networking.
+
+* Level 4: User-defined.
+
+* Level 5: Graphical multi-suer mode.
+
+* Level 6: Restart.
+
+* Level 7: User-defined.
+
+* Level 8: User-defined.
+
+* Level 9: User-defined.
+
+### init [level]
+>*change run level*
+
+### runlevel
+>*current run level, locate in __/sbin/runlevel__ *
+>*default runlevel presents in __/etc/inittab file__
+
+>*In Ubuntu presents systemd manager, thats why in Ubuntu miss inittab* 
+
+
+## START SKRIPTS.INITTAB
