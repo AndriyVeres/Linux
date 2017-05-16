@@ -1,2 +1,5 @@
 1) how to change default run level in Ubuntu?
 2) how to add service in run level in Linux?
+3) how to safe use fsck without damage to filesystem?
+4) FHS recomendations
+5) how to split according to FHS /usr and anothers catalogues to partitions?

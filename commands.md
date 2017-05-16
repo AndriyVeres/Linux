@@ -395,6 +395,9 @@ Grand Unified Bootloader, have:
 
 Kernel and start virtual disk archived by using gzip utilite, kernel can own unpack
 
+### /dev/kmem
+>*kernel memory, where directly save information about all processes, that kernel manage*
+
 ### dmesg
 >*kernel launching log*
 
@@ -476,4 +479,73 @@ In Linux present several types of run levels (depends on distributive):
 
 >*In Ubuntu presents systemd manager, thats why in Ubuntu miss inittab, where You can change default run level, for Ubuntu need to use __update-rc.d__ utilite or __sysv-rc-conf__   or __rcconf__* 
 
+## DEVICES
 
+> In linux presents two types of devices naming:
+* Static - file holes many in /dev, stable using.
+* Dynamic - file holes not many in /dev, user-friendly for human, but need to check inconsistencies, use virtual file system.
+
+>File-hole - named pipe, vs file-pipe, has a name.
+>All file-holes saved in */dev/* catalogue.
+
+### /dev/null
+>*real black hole, in this lace all wrote will be not saved*
+
+### /dev/urandom or /dev/random 
+>*random digits generator*
+
+### /dev/zero
+>*source of zeros*
+
+File-holes doesn`t have an size, they have vs size two id:
+*  1 digit (major device number) - driver type*
+*  2 digit (minor device number) - access type (for disc-types - section).*
+
+There are several types of file-holes:
+* minor device number b - block type, access by block transmittion, block devices can suppert direct access, like write block number 5 e.t.c.
+* minor device number c - character type, acess by byte transmittion
+* fifo-channel - (named pipe), any program can write to fifo and another program in the same moment can read wrom fifo.
+* socket - open for two users: server,that open socket first, any time listen for any messages, process massages, if they come, and responce to them; client, connect to socket, listn socket, send messages, process responces. 
+
+### mkfifo
+>*make fifo*
+
+### lspci
+>*list of all PCI-compatible devices*
+
+### fdisk
+>*program for working with disk partitions*
+
+## WORKING WITH DISK
+
+### mount
+>*mount device or disk partition for colaboration if file system*
+### umount
+>*unmount device or disk partition*
+
+### fsck
+>*utilite for checking and repairing Linux file system*
+
+### sync
+>*synchronize cached data to persistent storage, if you need immidiately writing process without buffer (will decrese device lifecycle)*
+
+### etc/fstab
+>*configurational file, when saved settings for devices mounting after system startup*
+
+
+##VIRTUAL FILESYSTEM
+
+### ROOMFS or TMPFS
+>*start virtual drive*
+
+###PROCFS
+>*processes, see /proc/*
+
+### devpts
+>*use for terminals emulators*
+
+### NFS
+>*network file system*
+
+### LUFS
+>*linux userland file system - use for organizing file system, that use information from linux processes, FTP, SSH clients,access to NTFS with vine e.t.c.*
