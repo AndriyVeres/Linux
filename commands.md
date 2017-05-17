@@ -549,3 +549,15 @@ There are several types of file-holes:
 
 ### LUFS
 >*linux userland file system - use for organizing file system, that use information from linux processes, FTP, SSH clients,access to NTFS with vine e.t.c.*
+
+## CONFIGURATIONAL FILES AND SYSTEM PROFILES
+
+In Linux for solving different problems and tasks use several types of system solutions.
+* Solution - special distributive, or software, that can solve dedicated problem, if user requirements not sppecific, in most cases solution will be usefull: see films, process sheets, work with e-mail.
+* Realization + system profile - constructor, that use software and deamons (realization) with deskription of them interaction (system profile), user can combine different modules, that solve problem by splitting it to subproblems (mini tasks, that element of realization can solve: text sorting, http server, e-mail server e.t.c), and deskribe interaction logic by using profile. For managing profile use CONFIGURATIONAL FILES.
+
+### .vimrc
+>*vim configurational file*
+
+### man dircolors
+>*ls colors configuration*
