@@ -561,3 +561,10 @@ In Linux for solving different problems and tasks use several types of system so
 
 ### man dircolors
 >*ls colors configuration*
+
+# SYSTEM LOGS
+
+Managed by syslogd deamon, which have /etc/syslog.d configurational file.
+If a program need save in system some event it can do it by two ways:
+* Write in opened by syslogd file event info. Usefull in cases when mennasges - not text, or it will be a lot, so syslogd will be overloaded - specific cases.
+* Use system call syslog(), which re-address message to syslogd. Most of the cases.
