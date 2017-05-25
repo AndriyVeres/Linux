@@ -568,3 +568,17 @@ Managed by syslogd deamon, which have /etc/syslog.d configurational file.
 If a program need save in system some event it can do it by two ways:
 * Write in opened by syslogd file event info. Usefull in cases when mennasges - not text, or it will be a lot, so syslogd will be overloaded - specific cases.
 * Use system call syslog(), which re-address message to syslogd. Most of the cases.
+
+In a previous version of Debian and Ubuntu cofigurational file of syslogd was located in **/etc/syslog.conf**  now it migrated to **/etc/rsyslog.d/50-default.conf**.
+
+All messages clasified horizontally (facility) (from which service) and vertically (priority).
+
+### man logger
+>*Facility types description*
+
+In configurational files presents two fields: 
+* Facility.Priority
+* Logging file
+
+
+In configurational file can be presents * symbol - that means any, or none, that means no one.
