@@ -574,7 +574,7 @@ In a previous version of Debian and Ubuntu cofigurational file of syslogd was lo
 All messages clasified horizontally (facility) (from which service) and vertically (priority).
 
 ### man logger
->*Facility types description*
+>*Facility and priority types description*
 
 In configurational files presents two fields: 
 * Facility.Priority
