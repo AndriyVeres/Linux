@@ -233,6 +233,12 @@ _searching in NAME columns in manuals [object]_
 ### chown 
 >*change file owner and group*
 
+### stmpclean
+>*utilite for cleaning /tmp*
+
+### locate
+>*find files by name*
+
 ### hexdump             
 >*show non-text files in ASCI HEX format*
 
@@ -533,7 +539,7 @@ There are several types of file-holes:
 >*configurational file, when saved settings for devices mounting after system startup*
 
 
-##VIRTUAL FILESYSTEM
+## VIRTUAL FILESYSTEM
 
 ### ROOMFS or TMPFS
 >*start virtual drive*
@@ -562,7 +568,7 @@ In Linux for solving different problems and tasks use several types of system so
 ### man dircolors
 >*ls colors configuration*
 
-# SYSTEM LOGS
+## SYSTEM LOGS
 
 Managed by syslogd deamon, which have /etc/syslog.d configurational file.
 If a program need save in system some event it can do it by two ways:
@@ -582,3 +588,32 @@ In configurational files presents two fields:
 
 
 In configurational file can be presents * symbol - that means any, or none, that means no one.
+
+System logs stored in /var/log/messages and another archives, that in order to filling delete, from messages.1 to messages.n, i.e. scrolling method, when oldest logs gradually moves from messages.1 to messages.n and delete.
+
+### logrotate
+>*utilite that rotates, comress and mails system logs*
+>*have a /etc/logrotate.d catalogue and /etc/logrotate.conf configurational file*
+
+## SCHEDULED ACTIONS
+
+Managed by cron utilite, that have */etc/crontab* cobfigurational file.
+Fields are named:
+* Minute
+* Hour
+* Day of month
+* month of year
+* day of week
+* user
+* commands
+
+>Symbol * means that field not active.
+
+In commands usually presents commands for execution files from .d-scheme, whene located sorted in alphabetic (numbers have higher priority, than letters).
+
+Also, because computer can be swithed off in time, when cron need to do some tasks, there is presents additional deamon: anacron (asynchronous cron), that do unfulfilled tasks, in possible time, without high load to system, configurational file */etc/anacrontab*.
+
+User can add his own scenario with the same syntax, but user field must be empty.
+
+### crontab -e
+>*editing the crontab*
