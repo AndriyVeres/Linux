@@ -146,9 +146,6 @@ _searching in NAME columns in manuals [object]_
 
 ### ps -ef
 >*
-
-
-
 	cat > [filename]   
 	//some text to file
 	^D
@@ -201,6 +198,9 @@ _searching in NAME columns in manuals [object]_
 ### find    
 >*search for files in a directory hierarchy*
 
+### cmp
+>*compare two files byte by byte*
+
 ### wc      
 >*word count*
 
@@ -227,6 +227,30 @@ _searching in NAME columns in manuals [object]_
 
 ### \enter  
 >*continue to editing a command in a new command line*
+
+### chroot
+>*utilite for testing services, that can run command in some catalogue, like utilite will be think like non-root catalogue - root catalogue*
+
+### visudo
+>*change sudoers file*
+
+### useradd
+>*add user*
+
+### usermod
+>*modify user account*
+
+### userdel
+>*delete user*
+
+### groupadd
+>*add group*
+
+### groupmod
+>*change group*
+
+### gruopdel
+>*delete group*
 
 ## FILES
 
@@ -532,6 +556,9 @@ There are several types of file-holes:
 ### etc/fstab
 >*configurational file, when saved settings for devices mounting after system startup*
 
+### updfstab
+>*utilite, that change /etc/fstab file*
+
 
 ##VIRTUAL FILESYSTEM
 
@@ -556,8 +583,36 @@ In Linux for solving different problems and tasks use several types of system so
 * Solution - special distributive, or software, that can solve dedicated problem, if user requirements not sppecific, in most cases solution will be usefull: see films, process sheets, work with e-mail.
 * Realization + system profile - constructor, that use software and deamons (realization) with deskription of them interaction (system profile), user can combine different modules, that solve problem by splitting it to subproblems (mini tasks, that element of realization can solve: text sorting, http server, e-mail server e.t.c), and deskribe interaction logic by using profile. For managing profile use CONFIGURATIONAL FILES.
 
-### .vimrc
->*vim configurational file*
+Can organized through the folowing way:
+
+* .d-scheme, i.e. different files for different profiles (like startup profiles).
+* layered files - core config - have settings for standard configuration, second, third files use core file by default, and can combine changed settings from core file in the third files, modified, so You can change default settings.
+* sectionizing of config - in configurational files split settings to groups, according to parts of profile.
+
+>Often configurational files  commented  in the  own  file, a principle called SELF-DESCRIPTIVE CONFIGURATIONAL FILE.
+
+### Configurational files for some utilites and deamons:
+
+### .vim
+>*group of files /usr/share/vim*
 
 ### man dircolors
 >*ls colors configuration*
+
+### wvdial
+>*config ~/.wvdialrc - utilite for dial up*
+
+### man
+>*/etc/manpath.config*
+
+### updfstab
+>*configurational file /etc/updfstab.conf*
+
+### /usr/share/doc/{service}/examples
+>*often examples of configs are putted here*
+
+### users
+>*/etc/passwd  and /etc/group*
+
+
+
