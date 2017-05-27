@@ -589,6 +589,8 @@ In Linux for solving different problems and tasks use several types of system so
 * Solution - special distributive, or software, that can solve dedicated problem, if user requirements not sppecific, in most cases solution will be usefull: see films, process sheets, work with e-mail.
 * Realization + system profile - constructor, that use software and deamons (realization) with deskription of them interaction (system profile), user can combine different modules, that solve problem by splitting it to subproblems (mini tasks, that element of realization can solve: text sorting, http server, e-mail server e.t.c), and deskribe interaction logic by using profile. For managing profile use CONFIGURATIONAL FILES.
 
+A lot of configurational files can also be customized by using /home directory of each user, in this directory customization configurational files use hidden formats: .[file]
+
 Can organized through the folowing way:
 
 * .d-scheme, i.e. different files for different profiles (like startup profiles).
