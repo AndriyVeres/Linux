@@ -673,3 +673,45 @@ User can add his own scenario with the same syntax, but user field must be empty
 
 ### crontab -e
 >*editing the crontab*
+
+## PACKAGE MANAGEMENT
+
+In Linux install, update, remove programs, services and utilites can be do with package help.
+Package - tool for manipulating of program/utilite/service source code, binary, libraries, configurational and another files, for easy do install, update, remove.
+All files need to be installed package to archive.
+Archive - tree of files, which can be managed like a one file.
+
+### tar
+>*utilite for archiving and unzipping arcchives, becomes eralier than Linuix, from UNIX, presents in any UNIX-compatible OS, mean "tape archiver".
+
+Package have an archive and some another components, so .tar format not usefull for package place, so it was dedicated some specific formats (in this files archives included):
+* .rpm - managed by rpm utilite: Red Hat packet manager.
+* .deb - managed by dpkg utilite: debian binary package format.
+
+Because a lot of packages has a relatives to another packages, installation of one program maybe will take a long time, bacause a user need to install another packages with primary, because primary use them like resources, and another of another packages, because them use them like resources e.t.c. For helping user in installation process was developed package managers, most popular - APT: Advanced Package Tool.
+
+### apt-cache seacrh
+>*search a package*
+
+### apt-get install
+>*install package*
+
+### apt-get remove
+>*remove package*
+
+>User can use VIRTUAL PACKAGE for installing to new OS software list, versus installing one by one components of list.
+
+### /etc/apt/sources.list
+>*list of repositories, that use apt, after changing lists need update apt cache by typing  apt-get update*
+
+### apt-get update
+>*update cache after updating repositories list*
+
+### apt-get source
+>*copy only package from repository*
+
+### apt-cdrom add
+>*add repository from cdrom, when user need install software from cdrom*
+
+### apt-get dist-upgrade
+>*upgrade whole distributive with packages*
