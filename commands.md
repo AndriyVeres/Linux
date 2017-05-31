@@ -146,9 +146,6 @@ _searching in NAME columns in manuals [object]_
 
 ### ps -ef
 >*
-
-
-
 	cat > [filename]   
 	//some text to file
 	^D
@@ -201,6 +198,9 @@ _searching in NAME columns in manuals [object]_
 ### find    
 >*search for files in a directory hierarchy*
 
+### cmp
+>*compare two files byte by byte*
+
 ### wc      
 >*word count*
 
@@ -227,6 +227,30 @@ _searching in NAME columns in manuals [object]_
 
 ### \enter  
 >*continue to editing a command in a new command line*
+
+### chroot
+>*utilite for testing services, that can run command in some catalogue, like utilite will be think like non-root catalogue - root catalogue*
+
+### visudo
+>*change sudoers file*
+
+### useradd
+>*add user*
+
+### usermod
+>*modify user account*
+
+### userdel
+>*delete user*
+
+### groupadd
+>*add group*
+
+### groupmod
+>*change group*
+
+### gruopdel
+>*delete group*
 
 ## FILES
 
@@ -538,6 +562,9 @@ There are several types of file-holes:
 ### etc/fstab
 >*configurational file, when saved settings for devices mounting after system startup*
 
+### updfstab
+>*utilite, that change /etc/fstab file*
+
 
 ## VIRTUAL FILESYSTEM
 
@@ -562,11 +589,40 @@ In Linux for solving different problems and tasks use several types of system so
 * Solution - special distributive, or software, that can solve dedicated problem, if user requirements not sppecific, in most cases solution will be usefull: see films, process sheets, work with e-mail.
 * Realization + system profile - constructor, that use software and deamons (realization) with deskription of them interaction (system profile), user can combine different modules, that solve problem by splitting it to subproblems (mini tasks, that element of realization can solve: text sorting, http server, e-mail server e.t.c), and deskribe interaction logic by using profile. For managing profile use CONFIGURATIONAL FILES.
 
-### .vimrc
->*vim configurational file*
+A lot of configurational files can also be customized by using /home directory of each user, in this directory customization configurational files use hidden formats: .[file]
+
+Can organized through the folowing way:
+
+* .d-scheme, i.e. different files for different profiles (like startup profiles).
+* layered files - core config - have settings for standard configuration, second, third files use core file by default, and can combine changed settings from core file in the third files, modified, so You can change default settings.
+* sectionizing of config - in configurational files split settings to groups, according to parts of profile.
+
+>Often configurational files  commented  in the  own  file, a principle called SELF-DESCRIPTIVE CONFIGURATIONAL FILE.
+
+### Configurational files for some utilites and deamons:
+
+### .vim
+>*group of files /usr/share/vim*
 
 ### man dircolors
 >*ls colors configuration*
+
+<<<<<<< HEAD
+### wvdial
+>*config ~/.wvdialrc - utilite for dial up*
+
+### man
+>*/etc/manpath.config*
+
+### updfstab
+>*configurational file /etc/updfstab.conf*
+
+### /usr/share/doc/{service}/examples
+>*often examples of configs are putted here*
+
+### users
+>*/etc/passwd  and /etc/group*
+
 
 ## SYSTEM LOGS
 
@@ -617,3 +673,45 @@ User can add his own scenario with the same syntax, but user field must be empty
 
 ### crontab -e
 >*editing the crontab*
+
+## PACKAGE MANAGEMENT
+
+In Linux install, update, remove programs, services and utilites can be do with package help.
+Package - tool for manipulating of program/utilite/service source code, binary, libraries, configurational and another files, for easy do install, update, remove.
+All files need to be installed package to archive.
+Archive - tree of files, which can be managed like a one file.
+
+### tar
+>*utilite for archiving and unzipping arcchives, becomes eralier than Linuix, from UNIX, presents in any UNIX-compatible OS, mean "tape archiver".
+
+Package have an archive and some another components, so .tar format not usefull for package place, so it was dedicated some specific formats (in this files archives included):
+* .rpm - managed by rpm utilite: Red Hat packet manager.
+* .deb - managed by dpkg utilite: debian binary package format.
+
+Because a lot of packages has a relatives to another packages, installation of one program maybe will take a long time, bacause a user need to install another packages with primary, because primary use them like resources, and another of another packages, because them use them like resources e.t.c. For helping user in installation process was developed package managers, most popular - APT: Advanced Package Tool.
+
+### apt-cache seacrh
+>*search a package*
+
+### apt-get install
+>*install package*
+
+### apt-get remove
+>*remove package*
+
+>User can use VIRTUAL PACKAGE for installing to new OS software list, versus installing one by one components of list.
+
+### /etc/apt/sources.list
+>*list of repositories, that use apt, after changing lists need update apt cache by typing  apt-get update*
+
+### apt-get update
+>*update cache after updating repositories list*
+
+### apt-get source
+>*copy only package from repository*
+
+### apt-cdrom add
+>*add repository from cdrom, when user need install software from cdrom*
+
+### apt-get dist-upgrade
+>*upgrade whole distributive with packages*
