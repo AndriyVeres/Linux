@@ -48,13 +48,43 @@ Utilites:
 Deamons:
 * pppd + pppoe (virtual modem interface)
 
-## NETWORK FIREWALL
+## NETWORK FIREWALL AND NAT
 
 ### iptables
 >*linux firewall utilite*
 
 ### iptables-save
->*list all rulles in all tables*
+>*list all rules in all tables*
 
 
-15.1.5.2
+## HTTP BROWSERS AND SERVERS
+
+Apache 
+thhtpd
+tux module for kernel
+
+## FTP
+
+*  FTP - required for public archives.
+* PFTP - Passive FTP through client Firewall.
+
+## TERMINAL ACCESS
+
+* TELNET - telnet, telnetd, not sequre.
+* SSH - ssh, sshd.
+
+## E-MAIL
+* mail - utilite for mailing.
+* sendmail - old SMTP server.
+* postfix - SMTP server.
+* QMail -   SMTP server.
+* Exim - SMTP server.
+* ZMailer - for high load servers.
+
+IMAP servers:
+
+* Cyrus
+* UW-IMAP
+* Binc
+
+
