@@ -1,5 +1,7 @@
 ## ENVIRONMENT VARIABLES
 
+### printenv {variable}
+>*show environment variable*
 
 ### PATH
 
@@ -12,3 +14,6 @@ like when we launch by typing a path to a file, shell will be search executable 
 ### PS1
 >*Use as welcome termincal welcome responce, when terminal waiting a command*
 >*\u - user; \h = host name; \t - time; \w - work directory and anothers...*
+
+### DISPLAY
+>*Stored address of X-server, for addressing queries from X-clients (visual programs)

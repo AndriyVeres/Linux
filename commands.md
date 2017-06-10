@@ -158,6 +158,9 @@ _searching in NAME columns in manuals [object]_
 ### top        
 >*system resources utility*
 
+### vmstat
+>*virtual memory statistics*
+
 ### fg         
 >*move last background process to foreground mode*
 
@@ -251,6 +254,9 @@ _searching in NAME columns in manuals [object]_
 
 ### gruopdel
 >*delete group*
+
+### patch
+>*apply a diff file to an original*
 
 ## FILES
 
@@ -354,6 +360,9 @@ _searching in NAME columns in manuals [object]_
 
 ### ^N
 >*Go to next entered command, equivalent to key down arrow*
+
+### sleep
+>*delay in terminal*
 
 
 ## ALIASES
@@ -715,3 +724,102 @@ Because a lot of packages has a relatives to another packages, installation of o
 
 ### apt-get dist-upgrade
 >*upgrade whole distributive with packages*
+
+## TCP/IP NETWORKING
+
+Linux allows see ip-networks transmission on differents OSI-levels.
+
+### ip
+>*show, manipulate, configure routing, devices, policy routing and tunnels*
+
+### ip link
+>*network device configuration on interface level*
+
+### ip link show
+>*show list of network interfaces*
+
+### ip address show
+>*show list of ip-adresses*
+
+### ip neighbour show
+>*show ARP-table (Address Resolution Protocol), MAC-adresses i one subnetwork*
+
+### ping
+>*send ICMP packets*
+
+### ifconfig
+>*iterface configuration old utilite, ip more powered*
+
+### ip route show
+>*show routing table*
+>*default means defailt route - exit to external network with mask 0, if default route not configured, you can`t send packets to external network*
+
+### arp
+>*show arp table old utilite, ip use the same functionality*
+
+### iptables
+>*packet filtering and NAT*
+
+### traceroute
+>*define the trace route to address*
+
+### tcpdump
+>*dump traffic on a network*
+
+### tcpdump -pi {interface}
+>*dump traffic on interface*
+
+### /etc/services
+>*list of all application protocoles, and ports, that they use*
+
+### netstat -antu
+>*print information about network connections*
+
+### telnet {address} {port}
+>*usefull to check if server provide service on port, but not for remote connection to server*
+
+### netcat
+>*ntework cat utilite*
+
+### inetd
+>*internet server*
+
+### /etc/hosts
+### /etc/hosts.conf
+### /etc/resolvconf
+>*list of domain names of hosts*
+
+### host
+### dig
+>*DNS loockup utility*
+
+
+>Loopback address use for transfering packets from computer hisself.
+
+>MTU - maximum tranfer unit, maximum allowed unit for transmission over interface.
+
+>FF:...:FF - hardware broadcast MAC-address, use, when  MAC-adress of subscriber unknown. 
+
+
+
+
+
+## GRAPHICAL INTERFACE X11
+
+Address of server for addressing from X-clients (visual programs) stored in variable DISPLAY
+
+### startx
+>*start X11 session*
+
+### X
+>*start X-server*
+
+### /etc/X11
+>*graphical subsystem profile*
+
+
+### editres
+>*see tree of X-objects, that application use*
+
+### xrdb
+>*X server resource database utility*
