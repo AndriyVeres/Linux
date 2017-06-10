@@ -17,4 +17,44 @@
 ### /etc/resolf.conf
 >*file with DNS addresses*
 
-next 15.1.2
+### /etc/init.d/network
+### etc/init.d/networking
+
+>*system startup network scenario*
+>*--start  switch on settings*
+>*--stop   switch off settings*
+
+>Interface configuration files, that use /etc/init.d/network(ing), in different Linux versions named differently, according to system, that uses for network configuration, for example in *etcnet* catalogue with settings named as: */etc/net*, and also in */etc/sysconfig/network*.
+
+>*In *ifupdown* use one file for network interfaces and router configuration.
+
+
+## DHCP
+
+In Linux DHCP process dhcpd deamon, on of files, that he can change - *resolv.conf*, so if in network works DHCP server, network settings: *ip-address, mask, default gateway, domain name, DHCP server address, broadcast ip-address e.t.c*, can be given over dhcpd and Linux will automatically configure network connection.
+
+## PPP
+
+This is moded access.
+Deamons:
+* pppd
+
+Utilites:
+* kppp: /etc/ppp (configuration files)
+* wvdial
+
+### PPPoE
+
+Deamons:
+* pppd + pppoe (virtual modem interface)
+
+## NETWORK FIREWALL
+
+### iptables
+>*linux firewall utilite*
+
+### iptables-save
+>*list all rulles in all tables*
+
+
+15.1.5.2
